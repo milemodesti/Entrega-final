@@ -1,0 +1,153 @@
+/********MEDIA QUERIES*****/
+
+@media screen and(max-width:1350px) {
+    .grid-contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "header"
+        "main "
+        "footer";
+    }
+
+    .body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .imagen{
+        width: 100%;
+    }
+
+    .main .mini-menu ul li a{
+        display: none;
+    }
+
+    .main .mini-menu{
+        display: none;
+    }
+    
+} 
+    @media(max-width:950px) {
+        /***MAIN PRODUCTOS***/
+
+        .grid-contenedor .main .grid-productos{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        main .grid-productos .filtros{
+            display: none;
+        }
+        
+       
+        .footer .fixed{
+            display: flex;
+            flex: none;
+        }
+        
+        .footer{
+            display: flex;
+            flex-direction: column;
+         }
+        
+    }
+
+   @media(max-width:900px) {
+    .grid-contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "header"
+        "main "
+        "footer";
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .imagen{
+        width: 100%;
+    }
+
+    .footer .fixed{
+        display: flex;
+        flex: none;
+    }
+    
+    .footer{
+        display: flex;
+        flex-direction: column;
+     }
+
+    .main .destacados .productos{
+        display: flex;
+        flex-direction: column;  
+    }
+
+
+
+    .main .mini-menu{
+        display: flex;
+        flex-direction: none;
+    }
+
+    .header nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*PAGINA NOSOTROS*/
+
+    main .flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*PAGINA MONITORES*/
+
+    main .monitores{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+     @media screen and (max-width:600px){
+
+            .body{
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .main .mini-menu{
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                height: auto;
+            }
+        
+            .main .mini-menu ul{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .footer{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .main .imagen{
+                width: 100%;
+            }
+        }
+
+        @media(max-width:500px){
+            .main .imagen{
+                width: 100%;
+            }
+        }

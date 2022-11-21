@@ -1,0 +1,67 @@
+/***********PAGINA NOSOTROS*******/
+
+/*******MAIN********/
+
+main{
+    .nosotros{
+        h2{
+            font-size: 35PX;
+            font-weight: 500px;
+            font-family: 'Roboto', sans-serif , 'Roboto Condensed', sans-serif;
+            background-color: nth($colores, 1 );
+            color: nth($colores, 2 );
+        }
+    }
+    .flex{
+        display: flex;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10 px;
+        padding-bottom: 20px;
+        .hola{
+            padding-right: 10px;
+            h3{
+                font-size: 25PX;
+                font-weight: 350px;
+                font-family: 'Roboto', sans-serif , 'Roboto Condensed', sans-serif;
+                color: nth($colores, 1 );
+                // text-align: center;
+                padding: 5px;
+            }
+            p{
+                font-family: 'Roboto', sans-serif , 'Roboto Condensed', sans-serif;
+                color: nth($colores, 1 );
+            }
+        }
+        .flex .flex-colum{
+            .mision{
+                h3{
+                    font-size: 25PX;
+                    font-weight: 350px;
+                    font-family: 'Roboto', sans-serif , 'Roboto Condensed', sans-serif;
+                    color: nth($colores, 1 );
+                    text-align: center;
+                    padding: 5px;
+                }
+                p{
+                    font-family: 'Roboto', sans-serif , 'Roboto Condensed', sans-serif;
+                    color: nth($colores, 1 );
+                }
+            }
+            .vision{
+                h3{
+                    font-size: 25PX;
+                    font-weight: 350px;
+                    font-family: 'Roboto', sans-serif , 'Roboto Condensed', sans-serif;
+                    color: nth($colores, 1 );
+                    text-align: center;
+                    padding: 5px;
+                }
+                p{
+                    font-family: 'Roboto', sans-serif , 'Roboto Condensed', sans-serif;
+                    color: nth($colores, 1 );
+                }
+            }
+        }
+    }
+}

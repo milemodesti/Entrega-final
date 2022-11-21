@@ -1,0 +1,65 @@
+/**********HEADER**********/
+
+
+.header{
+    background-color: nth($colores, 2 );
+    font-size: 20px;
+    font-weight: 80px;
+    font-family: 'Roboto', sans-serif, 'Roboto Condensed', sans-serif;
+    width: 100%;
+    height: auto; 
+    position: sticky;
+    top: 0;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            list-style: none;
+            display:flex;
+            justify-content: flex-end;
+            align-items: center;
+            li{
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    bottom: auto;
+                    background-color: nth($colores, 2);
+                    display: none;
+                    li{
+                        margin: 0;
+                        padding: 0;
+                        a{
+                            text-decoration: none;
+                            color: nth($colores, 1);
+                            padding: 12px 20px;
+                            display: block;
+                        } 
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: nth($colores, 1);
+                    padding: 12px 20px;
+                    display: block;
+                    &:hover{
+                        background-color: rgba(255, 255, 255, 0.253);
+                        border-radius: 10px;
+                        color: nth($colores, 1);
+                    }
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                &:hover > ul{
+                    display: block;
+                }
+
+
+            }
+        }
+    }
+}
+

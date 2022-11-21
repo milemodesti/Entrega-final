@@ -1,0 +1,91 @@
+/****MAIN****/
+
+.main{
+    h1{
+        background-color: nth($colores, 1 );
+        color: white;
+        text-align: center;
+        font-family:'Roboto', sans-serif , 'Roboto Condensed', sans-serif; 
+    }
+    .imagen{
+        img{
+            background-image: url("../../img/pexels-marta-branco-1194713\ \(1\).jpg");
+            width: 100%;
+            height: calc(100vh - 92.55px);
+        }
+    }
+    .mini-menu{
+        background-color: nth($colores, 1);
+        width: 100;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            li{
+                a{
+                    text-decoration: none;
+                    font-size: 30px;
+                    font-weight: 400px;
+                    font-family: 'Roboto', sans-serif , 'Roboto Condensed', sans-serif;
+                    color: white;
+                    text-align: center;
+                    
+                }
+            } 
+        }   
+    }
+    .destacados{
+        h2{
+            font-size: 35PX;
+            font-weight: 500px;
+            font-family: 'Roboto', sans-serif , 'Roboto Condensed', sans-serif;
+            background-color: nth($colores, 2);
+            color: #30373F;
+        }
+        .productos{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            div{
+                text-align: center;
+                height: 400px;
+                border: 1px solid #30373F;
+                border-radius: 15px;box-shadow: 10px 10px 26px -15px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 10px 10px 26px -15px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 10px 26px -15px rgba(0,0,0,0.75);
+                img{
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 15px;
+                }
+                h3{
+                    text-align: center;
+                    font-size: 25px;
+                    font-family: 'Roboto', sans-serif , 'Roboto Condensed', sans-serif;
+                    margin-bottom: 20px;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: 100px;
+                    text-align: center; 
+                    font-family: 'Roboto', sans-serif , 'Roboto Condensed', sans-serif;
+                    background-color: nth($colores, 2);
+                    color: nth($colores, 1 );
+                    padding: 5px 10px 5px 10px;
+                    border-radius: 5px;  
+                }
+
+            }
+
+        }
+
+    }
+}
